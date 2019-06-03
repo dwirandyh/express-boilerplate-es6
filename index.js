@@ -1,5 +1,8 @@
-import app from './app';
+import app from "./app";
+import { PORT } from "./config";
 
-app.listen('5002', () => {
-    console.log('App is running on port 5002');
+app.listen(PORT, () => {
+  console.log(`App is running on port ${PORT}`);
 });
+
+export default app;
